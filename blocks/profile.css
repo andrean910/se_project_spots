@@ -1,0 +1,12 @@
+.profile {
+  display: flex;
+  padding: 0 0 20px;
+  margin: 80px;
+}
+.profile__button-post {
+  margin-left: auto;
+}
+.profile__image {
+}
+.profile__description {
+}
