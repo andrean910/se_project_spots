@@ -17,7 +17,6 @@
   -webkit-box-orient: vertical;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
   font-size: 32px;
   line-height: 1;
 }
@@ -30,7 +29,6 @@
   -webkit-box-orient: vertical;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 1;
   color: #212121b2;
@@ -46,7 +44,6 @@
   text-align: left;
   font-family: Poppins;
   font-weight: bold;
-  font-style: Medium;
   font-size: 16px;
   line-height: 1;
   opacity: 60%;
@@ -65,7 +62,6 @@
   color: #fcf5e5;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 1;
 }

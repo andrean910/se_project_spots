@@ -25,9 +25,8 @@
   overflow: hidden;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 .card__like-button {
   background-image: url(../images/heart.svg);
@@ -58,7 +57,6 @@
   }
   .card__title {
     font-size: 16px;
-    background-color: aquamarine;
   }
   .card__like-button {
     height: 18px;
