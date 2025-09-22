@@ -3,8 +3,10 @@
 ### Overview
 
 - Intro
+- Technologies and Techniques
 - Figma
-- Images
+- Future Enhancements
+- Deployment
 
 ## Intro
 
@@ -22,13 +24,12 @@ This project is made so all the elements are displayed correctly on popular scre
 
 ## Figma
 
-- All stylistic design for this project is located at the Figma project below.
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- All stylistic design for this project is located using this link: [Project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
 ## Future Enhancements
 
--To enhance this project, I would connect it to a database so that users can actually edit their profiles and the images displayed. I might also include an area for comments on the pictures or a way to share the pictures via text or an application.
+To enhance this project, I would connect it to a database so that users can actually edit their profiles and the images displayed. I might also include an area for comments on the pictures or a way to share the pictures via text or an application.
 
 ## Deployment
 
-- View the deployed project on GitHub Pages: [https://andrean910.github.io/spots](https://yourusername.github.io/spots)
+View the deployed project on GitHub Pages: [Spots Project by Andrea Noonan](https://andrean910.github.io/se_project_spots)
