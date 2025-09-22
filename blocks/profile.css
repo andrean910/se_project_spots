@@ -1,12 +1,116 @@
 .profile {
   display: flex;
-  padding: 0 0 20px;
-  margin: 80px;
-}
-.profile__button-post {
-  margin-left: auto;
+  padding: 34px 0 20px 0;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 .profile__image {
+  margin-right: 20px;
+  height: 190px;
+  width: 190px;
+}
+.profile__name {
+  margin: 0 0 12px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 1;
+}
+.profile__job {
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1;
+  color: #212121b2;
 }
 .profile__description {
+  display: flex;
+  flex-direction: column;
+}
+.profile__edit-button {
+  margin-top: auto;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: bold;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1;
+  opacity: 60%;
+  max-width: 108px;
+}
+.profile__edit-button:hover {
+  opacity: 100%;
+}
+.profile__add-button {
+  margin-left: auto;
+  margin-top: auto;
+  width: 149px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fcf5e5;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1;
+}
+.profile__add-button:hover {
+  background-color: #212121cc;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 630px) {
+  .profile {
+    max-width: 1280px;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .profile__image {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+  .profile__name {
+    margin: 12px 0 6px;
+    font-size: 20px;
+  }
+
+  .profile__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile__job {
+    margin: 0 0 32px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .profile__edit-button {
+    margin: 0 0 20px;
+    align-self: center;
+  }
+  .profile__add-button {
+    max-width: 400px;
+    margin: 0;
+    width: 100%;
+    align-self: center;
+  }
 }

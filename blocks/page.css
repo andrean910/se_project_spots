@@ -2,3 +2,7 @@
   background-color: #fcf5e5;
   font-family: "Poppins", Arial, sans-serif;
 }
+.page__section {
+  margin: 0 auto;
+  max-width: 1280px;
+}

@@ -1,5 +1,10 @@
 .header {
   margin: 0 auto;
+  padding: 10px 0;
   text-align: center;
   background-color: #ffff;
+}
+.header__logo {
+  width: 94px;
+  height: 26px;
 }

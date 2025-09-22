@@ -12,16 +12,97 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="spots logo" />
+      </header>
       <main class="content">
-        <section class="profile">
-          <h2 class="profile__name">Bessie Colman</h2>
-          <p class="profile__job">Civil Aviator</p>
-          <button>Edit Post</button>
+        <section class="profile page__section">
+          <img class="profile__image" alt="avatar" src="./images/avatar.jpg" />
+          <div class="profile__description">
+            <h2 class="profile__name">Bessie Coleman</h2>
+            <p class="profile__job">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <img src="./images/pencil.svg" alt="pencil icon" /> Edit Post
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img src="./images/plus.svg" alt="plus icon" /> New Post
+          </button>
         </section>
-        <section class="cards"></section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant Terrace</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An Outdoor Cafe</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">A very long bridge over the forest</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with Morning Light</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Moritz"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain House</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="footer__content">2023 © Spots</p>
+      </footer>
     </div>
   </body>
 </html>
