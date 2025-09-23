@@ -7,6 +7,7 @@
   margin-right: 20px;
   height: 190px;
   width: 190px;
+  border-radius: 8px;
 }
 .profile__name {
   margin: 0 0 12px;
@@ -15,7 +16,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -27,7 +28,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -39,11 +40,14 @@
 }
 .profile__edit-button {
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background-color: transparent;
   border: none;
   text-align: left;
-  font-family: Poppins;
-  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1;
   opacity: 60%;
@@ -55,12 +59,17 @@
 .profile__add-button {
   margin-left: auto;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: 149px;
   height: 52px;
+  border: none;
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;

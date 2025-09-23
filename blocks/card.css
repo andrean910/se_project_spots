@@ -23,7 +23,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
