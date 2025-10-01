@@ -111,11 +111,13 @@
   .profile__edit-button {
     margin: 0 0 20px;
     align-self: center;
+    padding: 0;
   }
   .profile__add-button {
     max-width: 400px;
     margin: 0;
     width: 100%;
     align-self: center;
+    padding: 0;
   }
 }
