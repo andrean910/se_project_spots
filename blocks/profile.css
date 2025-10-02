@@ -3,12 +3,14 @@
   padding: 34px 0 20px 0;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
+
 .profile__image {
   margin-right: 20px;
   height: 190px;
   width: 190px;
   border-radius: 8px;
 }
+
 .profile__name {
   margin: 0 0 12px;
   display: -webkit-box;
@@ -21,6 +23,7 @@
   font-size: 32px;
   line-height: 1;
 }
+
 .profile__job {
   margin: 0;
   display: -webkit-box;
@@ -34,10 +37,12 @@
   line-height: 1;
   color: #212121b2;
 }
+
 .profile__description {
   display: flex;
   flex-direction: column;
 }
+
 .profile__edit-button {
   margin-top: auto;
   display: flex;
@@ -53,9 +58,11 @@
   opacity: 60%;
   max-width: 108px;
 }
+
 .profile__edit-button:hover {
   opacity: 100%;
 }
+
 .profile__add-button {
   margin-left: auto;
   margin-top: auto;
@@ -74,6 +81,7 @@
   font-size: 16px;
   line-height: 1;
 }
+
 .profile__add-button:hover {
   background-color: #212121cc;
   opacity: 80%;
@@ -85,11 +93,13 @@
     flex-direction: column;
     padding: 20px 0;
   }
+
   .profile__image {
     margin: 0 auto;
     width: 80px;
     height: 80px;
   }
+
   .profile__name {
     margin: 12px 0 6px;
     font-size: 20px;
@@ -100,6 +110,7 @@
     flex-direction: column;
     text-align: center;
   }
+
   .profile__job {
     margin: 0 0 32px;
     display: -webkit-box;
@@ -108,11 +119,13 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
+
   .profile__edit-button {
     margin: 0 0 20px;
     align-self: center;
     padding: 0;
   }
+
   .profile__add-button {
     max-width: 400px;
     margin: 0;

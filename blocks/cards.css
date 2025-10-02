@@ -1,6 +1,7 @@
 .cards {
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
+
 .cards__list {
   padding: 0;
   list-style-type: none;
