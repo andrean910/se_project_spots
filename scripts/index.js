@@ -53,24 +53,32 @@ const newPostForm = newPostModal.querySelector("#post-form");
 const newPostLinkInput = newPostModal.querySelector("#new-post-input");
 const newPostCaptionInput = newPostModal.querySelector("#caption-input");
 
+//Open and Close modal functions
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
 //Open and Close Edit Profile Modal
 editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileJobInput.value = profileJobEl.textContent;
 });
 
 closeEditBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 //Open and Close New Post Modal
 addPostbtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 closePostBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 initialCards.forEach(function (item) {
