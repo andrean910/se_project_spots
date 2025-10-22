@@ -51,8 +51,6 @@ const editProfileJobInput = editProfileModal.querySelector(
 const addPostbtn = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const closePostBtn = newPostModal.querySelector(".modal__close-btn");
-const postLinkEl = document.querySelector(".card__image");
-const postCaptionEl = document.querySelector(".card__title");
 const newPostForm = newPostModal.querySelector("#post-form");
 const newPostLinkInput = newPostModal.querySelector("#new-post-input");
 const newPostCaptionInput = newPostModal.querySelector("#caption-input");
@@ -152,10 +150,12 @@ editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 //New Post Submit
 function handlePostFormSubmit(evt) {
   evt.preventDefault();
-  newCard = {};
+  if (!newPostForm.checkValidity()) return;
+  let newCard = {};
   newCard.name = newPostCaptionInput.value;
   newCard.link = newPostLinkInput.value;
   cardsList.prepend(getCardElement(newCard));
-  newPostModal.classList.remove("modal_is-opened");
+  newPostForm.reset();
+  closeModal(newPostModal);
 }
 newPostForm.addEventListener("submit", handlePostFormSubmit);

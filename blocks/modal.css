@@ -1,7 +1,6 @@
 .modal {
   visibility: hidden;
   opacity: 0;
-  /* transition: opacity 0.5s linear; */
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -42,6 +41,7 @@
   border: none;
   background-color: transparent;
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .modal__close-btn:hover {
@@ -52,7 +52,6 @@
   margin: 0 0 32px;
   font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 32px;
   line-height: 100%;
   max-width: 770px;
@@ -105,6 +104,10 @@
   font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+}
+.modal__save-btn:hover {
+  transform: translateY(-1px);
 }
 
 .modal__image-container {
@@ -135,6 +138,7 @@
   border: none;
   background-color: transparent;
   opacity: 1;
+  cursor: pointer;
 }
 
 .modal__image-close-btn:hover {

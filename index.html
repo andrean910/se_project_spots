@@ -8,7 +8,7 @@
     <meta name="description" content="spots" />
     <meta name="keywords" content="spots" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="favicon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="page">
@@ -19,7 +19,7 @@
         <section class="profile page__section">
           <img class="profile__image" alt="avatar" src="./images/avatar.jpg" />
           <div class="profile__description">
-            <h2 class="profile__name">Bessie Coleman</h2>
+            <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__job">Civil Aviator</p>
             <button type="button" class="profile__edit-button">
               <img src="./images/pencil.svg" alt="pencil icon" /> Edit Profile
@@ -58,6 +58,7 @@
               class="modal__input"
               type="text"
               placeholder="Type your name"
+              required
             />
             <label for="profile-desc-input" class="modal__label"
               >Description</label
@@ -67,6 +68,7 @@
               class="modal__input"
               type="text"
               placeholder="Describe yourself"
+              required
             />
             <button class="modal__save-btn" type="submit">Save</button>
           </form>
@@ -83,6 +85,7 @@
               class="modal__input"
               type="url"
               placeholder="Paste a link to the picture"
+              required
             />
             <label for="caption-input" class="modal__label">Caption</label>
             <input
@@ -90,6 +93,7 @@
               class="modal__input"
               type="text"
               placeholder="Type your caption"
+              required
             />
             <button class="modal__save-btn" type="submit">Save</button>
           </form>

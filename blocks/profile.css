@@ -55,8 +55,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  opacity: 60%;
+  opacity: 0.6;
   max-width: 120px;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -80,6 +81,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
