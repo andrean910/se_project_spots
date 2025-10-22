@@ -115,11 +115,6 @@
 
   .profile__job {
     margin: 0 0 32px;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
 
   .profile__edit-button {
