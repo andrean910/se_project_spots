@@ -31,72 +31,16 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Val Thorens</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Restaurant Terrace</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">An Outdoor Cafe</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">A very long bridge over the forest</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Tunnel with Morning Light</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="Moritz"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Mountain House</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <img src="#" alt="" class="card__image" />
+                <button type="button" class="card__delete-button"></button>
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-button"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -149,6 +93,13 @@
             />
             <button class="modal__save-btn" type="submit">Save</button>
           </form>
+        </div>
+      </div>
+      <div class="modal" id="image-popup-modal">
+        <div class="modal__image-container">
+          <button class="modal__image-close-btn"></button>
+          <img src="#" alt="" class="modal__image" />
+          <p class="modal__image-title"></p>
         </div>
       </div>
     </div>
