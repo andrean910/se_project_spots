@@ -33,3 +33,8 @@ To enhance this project, I would connect it to a database so that users can actu
 ## Deployment
 
 View the deployed project on GitHub Pages: [Spots Project by Andrea Noonan](https://andrean910.github.io/se_project_spots)
+
+## ProjectPitch
+
+Check out [this video](https://drive.google.com/file/d/1hQwfqpjKa6ztzTq6jF2jiarObqglhaEG/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.
