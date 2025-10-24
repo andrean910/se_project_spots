@@ -73,7 +73,7 @@
 }
 
 .modal__input {
-  margin: 0 0 32px;
+  margin: 0;
   height: 52px;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
@@ -93,6 +93,24 @@
   border: 1px solid rgba(33, 33, 33, 1);
 }
 
+.modal__input-error {
+  color: #ff0000b2;
+  opacity: 0.7;
+  display: block;
+  margin: 8px 0 32px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+}
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__input_type_error:hover {
+  border: 1px solid rgba(255, 0, 0, 1);
+}
+
 .modal__save-btn {
   background-color: #212121;
   color: #fcf5e5;
@@ -106,8 +124,14 @@
   font-size: 16px;
   cursor: pointer;
 }
+
 .modal__save-btn:hover {
   transform: translateY(-1px);
+}
+
+.modal__save-btn_inactive {
+  background-color: #212121;
+  opacity: 0.5;
 }
 
 .modal__image-container {

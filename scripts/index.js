@@ -36,7 +36,8 @@ const initialCards = [
 //Variables for Edit Profile
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const closeEditBtn = editProfileModal.querySelector(".modal__close-btn");
+const closeProfileBtn = editProfileModal.querySelector(".modal__close-btn");
+const saveProfileBtn = editProfileModal.querySelector(".modal__save-btn");
 const profileNameEl = document.querySelector(".profile__name");
 const profileJobEl = document.querySelector(".profile__job");
 const editProfileForm = editProfileModal.querySelector("#profile-form");
@@ -46,13 +47,15 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileJobInput = editProfileModal.querySelector(
   "#profile-desc-input"
 );
+const buttonElement = document.querySelectorAll(".modal__save-btn");
 
 //Variables for New Post
 const addPostbtn = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const closePostBtn = newPostModal.querySelector(".modal__close-btn");
+const savePostBtn = newPostModal.querySelector(".modal__save-btn");
 const newPostForm = newPostModal.querySelector("#post-form");
-const newPostLinkInput = newPostModal.querySelector("#new-post-input");
+const newPostLinkInput = newPostModal.querySelector("#card-link-input");
 const newPostCaptionInput = newPostModal.querySelector("#caption-input");
 
 //Variables for Image Modal
@@ -112,19 +115,26 @@ initialCards.forEach(function (item) {
 //Open and Close modal functions
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 //Open and Close Edit Profile Modal
 editProfileBtn.addEventListener("click", function () {
-  openModal(editProfileModal);
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileJobInput.value = profileJobEl.textContent;
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileJobInput],
+    settings
+  );
+  openModal(editProfileModal);
 });
 
-closeEditBtn.addEventListener("click", function () {
+closeProfileBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
@@ -144,6 +154,7 @@ function handleProfileFormSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileJobEl.textContent = editProfileJobInput.value;
   editProfileModal.classList.remove("modal_is-opened");
+  disableButton(saveProfileBtn, settings);
 }
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 
@@ -157,5 +168,26 @@ function handlePostFormSubmit(evt) {
   cardsList.prepend(getCardElement(newCard));
   newPostForm.reset();
   closeModal(newPostModal);
+  disableButton(savePostBtn, settings);
 }
 newPostForm.addEventListener("submit", handlePostFormSubmit);
+
+//Close modal via overlay
+const allModals = document.querySelectorAll(".modal");
+
+function handleEscapeKey(event) {
+  if (event.key === "Escape") {
+    const openedModal = document.querySelector(".modal.modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
+allModals.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
