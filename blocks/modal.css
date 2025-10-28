@@ -67,7 +67,6 @@
   opacity: 0.7;
   font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 110%;
 }
@@ -80,7 +79,6 @@
   padding-left: 12px;
   font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 100%;
 }
@@ -96,13 +94,18 @@
 .modal__input-error {
   color: #ff0000b2;
   opacity: 0.7;
-  display: block;
   margin: 8px 0 32px;
   font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
+  display: none;
 }
+
+.modal__error_visible {
+  display: block;
+}
+
 .modal__input_type_error {
   border: 1px solid rgba(255, 0, 0, 0.6);
 }

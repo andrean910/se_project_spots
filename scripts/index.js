@@ -50,7 +50,7 @@ const editProfileJobInput = editProfileModal.querySelector(
 const buttonElement = document.querySelectorAll(".modal__save-btn");
 
 //Variables for New Post
-const addPostbtn = document.querySelector(".profile__add-button");
+const addPostBtn = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const closePostBtn = newPostModal.querySelector(".modal__close-btn");
 const savePostBtn = newPostModal.querySelector(".modal__save-btn");
@@ -108,8 +108,8 @@ closeImageModalBtn.addEventListener("click", function () {
 
 //Set Up Initial Cards
 initialCards.forEach(function (item) {
-  const cards = getCardElement(item);
-  cardsList.append(cards);
+  const cardEl = getCardElement(item);
+  cardsList.append(cardEl);
 });
 
 //Open and Close modal functions
@@ -139,7 +139,7 @@ closeProfileBtn.addEventListener("click", function () {
 });
 
 //Open and Close New Post Modal
-addPostbtn.addEventListener("click", function () {
+addPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
 });
 
@@ -153,7 +153,7 @@ function handleProfileFormSubmit(evt) {
 
   profileNameEl.textContent = editProfileNameInput.value;
   profileJobEl.textContent = editProfileJobInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
   disableButton(saveProfileBtn, settings);
 }
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);

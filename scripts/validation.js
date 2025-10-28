@@ -4,19 +4,21 @@ const settings = {
   submitButtonSelector: ".modal__save-btn",
   inactiveButtonClass: "modal__save-btn_inactive",
   inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__input-error",
+  errorClass: "modal__error_visible",
 };
 
 const showInputError = (formElement, inputElement, errorMessage, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   inputElement.classList.add(config.inputErrorClass);
   errorElement.textContent = errorMessage;
+  errorElement.classList.add(config.errorClass);
 };
 
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   inputElement.classList.remove(config.inputErrorClass);
   errorElement.textContent = "";
+  errorElement.classList.remove(config.errorClass);
 };
 
 const checkInputValidity = (formElement, inputElement, config) => {
