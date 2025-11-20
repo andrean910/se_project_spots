@@ -7,26 +7,37 @@
     <meta name="Andrea Noonan" content="Name of Author" />
     <meta name="description" content="spots" />
     <meta name="keywords" content="spots" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="spots logo" />
+        <img
+          class="header__logo"
+          src="<%=require('./images/logo.svg')%>"
+          alt="spots logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img class="profile__image" alt="avatar" src="./images/avatar.jpg" />
+          <img
+            class="profile__image"
+            alt="avatar"
+            src="<%=require('./images/avatar.jpg')%>"
+          />
           <div class="profile__description">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__job">Civil Aviator</p>
             <button type="button" class="profile__edit-button">
-              <img src="./images/pencil.svg" alt="pencil icon" /> Edit Profile
+              <img
+                src="<%=require('./images/pencil.svg')%>"
+                alt="pencil icon"
+              />
+              Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-button">
-            <img src="./images/plus.svg" alt="plus icon" /> New Post
+            <img src="<%=require('./images/plus.svg')%>" alt="plus icon" /> New
+            Post
           </button>
         </section>
         <section class="cards page__section">
@@ -127,7 +138,5 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/validation.js"></script>
   </body>
 </html>

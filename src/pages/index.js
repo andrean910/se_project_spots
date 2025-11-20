@@ -1,3 +1,12 @@
+import "./index.css";
+
+import {
+  enableValidation,
+  settings,
+  resetValidation,
+  disableButton,
+} from "../scripts/validation.js";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -191,3 +200,5 @@ allModals.forEach((modal) => {
     }
   });
 });
+
+enableValidation(settings);
