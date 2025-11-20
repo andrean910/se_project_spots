@@ -24,6 +24,10 @@
             alt="avatar"
             src="<%=require('./images/avatar.jpg')%>"
           />
+          <button type="button" class="profile__edit-avatar-button">
+            <img src="<%=require('./images/pencil.svg')%>" alt="plus icon" />
+            Edit Avatar
+          </button>
           <div class="profile__description">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__job">Civil Aviator</p>
@@ -135,6 +139,33 @@
           <button class="modal__image-close-btn"></button>
           <img src="#" alt="" class="modal__image" />
           <p class="modal__image-title"></p>
+        </div>
+      </div>
+      <div class="modal" id="edit-avatar-modal">
+        <div class="modal__container">
+          <button class="modal__close-btn"></button>
+          <h3 class="modal__title">Edit Profile Avatar</h3>
+          <form class="modal__form" id="avatar-form" novalidate>
+            <label for="profile-avatar-input" class="modal__label"
+              >Profile Picture</label
+            >
+            <input
+              id="profile-avatar-input"
+              class="modal__input"
+              type="url"
+              placeholder="Profile Picture"
+              name="profile-avatar"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span
+              id="profile-avatar-input-error"
+              class="modal__input-error"
+            ></span>
+
+            <button class="modal__save-btn" type="submit">Save</button>
+          </form>
         </div>
       </div>
     </div>
