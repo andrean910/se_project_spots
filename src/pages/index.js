@@ -217,6 +217,7 @@ closePostBtn.addEventListener("click", function () {
 const editAvatarBtn = document.querySelector(".profile__edit-avatar-button");
 const editAvatarModal = document.querySelector("#edit-avatar-modal");
 const closeEditAvatarBtn = editAvatarModal.querySelector(".modal__close-btn");
+const avatarInput = editAvatarModal.querySelector("#profile-avatar-input");
 
 editAvatarBtn.addEventListener("click", function () {
   openModal(editAvatarModal);
@@ -268,6 +269,25 @@ function handlePostFormSubmit(evt) {
     });
 }
 newPostForm.addEventListener("submit", handlePostFormSubmit);
+
+//New Avatar Submit
+const saveAvatarBtn = editAvatarModal.querySelector(".modal__save-btn");
+const editAvatarForm = editAvatarModal.querySelector("#avatar-form");
+const editAvatartInput = editAvatarModal.querySelector("#profile-avatar-input");
+
+function handleAvatarFormSubmit(evt) {
+  evt.preventDefault();
+  api
+    .editAvatar({ link: editAvatartInput.value })
+    .this((data) => {
+      closeModal(editAvatarModal);
+      disableButton(saveAvatarBtn, settings);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+}
+editAvatarForm.addEventListener("submit", handleAvatarFormSubmit);
 
 //Close modal via overlay
 const allModals = document.querySelectorAll(".modal");

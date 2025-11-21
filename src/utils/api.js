@@ -40,6 +40,13 @@ class Api {
     }).then(this._handleServerResponse);
   }
 
+  editAvatar({ link }) {
+    return fetch(`${this._baseUrl}/users/me/avatar`, {
+      method: "PATCH",
+      headers: this._headers,
+    }).then(this._handleServerResponse);
+  }
+
   addNewCard({ name, link }) {
     return fetch(`${this._baseUrl}/cards`, {
       method: "POST",
