@@ -279,7 +279,8 @@ function handleAvatarFormSubmit(evt) {
   evt.preventDefault();
   api
     .editAvatar({ link: editAvatartInput.value })
-    .this((data) => {
+    .then((data) => {
+      profileAvatarEl.src = data.avatar;
       closeModal(editAvatarModal);
       disableButton(saveAvatarBtn, settings);
     })
