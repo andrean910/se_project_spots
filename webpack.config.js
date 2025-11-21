@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   entry: {
@@ -11,10 +12,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    publicPath: "/se_project_spots/",
+    publicPath: isProd ? "/se_project_spots/" : "/",
   },
 
-  // mode: "development",
+  mode: isProd ? "production" : "development",
   devtool: "inline-source-map",
   stats: "errors-only",
   devServer: {

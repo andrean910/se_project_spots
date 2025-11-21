@@ -36,5 +36,5 @@ View the deployed project on GitHub Pages: [Spots Project by Andrea Noonan](http
 
 ## ProjectPitch
 
-Check out [this video](https://drive.google.com/file/d/1hQwfqpjKa6ztzTq6jF2jiarObqglhaEG/view?usp=sharing), where I describe my
+Check out [this video](https://www.loom.com/share/c9a0aa597f9a40ee9b16ae59466a7efc), where I describe my
 project and some challenges I faced while building it.
